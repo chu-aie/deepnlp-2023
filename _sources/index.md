@@ -1,14 +1,18 @@
 # Deep Learning for NLP Course 2023
 
-[![pypi-image]][pypi-url]
 [![version-image]][release-url]
 [![release-date-image]][release-url]
 [![license-image]][license-url]
 [![jupyter-book-image]][docs-url]
 [![codecov][codecov-image]][codecov-url]
+[![course-img]][course-url]
+[![lecture-img]][lecture-url]
 
 <!-- Links: -->
-[hyperfast python template]: https://github.com/entelecheia/hyperfast-python-template
+[course-img]: https://img.shields.io/badge/course-entelecheia.ai-blue
+[course-url]: https://course.entelecheia.ai
+[lecture-img]: https://img.shields.io/badge/lecture-entelecheia.ai-blue
+[lecture-url]: https://lecture.entelecheia.ai
 
 [codecov-image]: https://codecov.io/gh/chu-aie/deepnlp-2023/branch/main/graph/badge.svg?token=[REPLACE_ME]
 [codecov-url]: https://codecov.io/gh/chu-aie/deepnlp-2023
@@ -31,7 +35,9 @@ Deep Learning for NLP is a specialized course aimed at equipping undergraduate s
 
 - Documentation: [https://chu-aie.github.io/deepnlp-2023][docs-url]
 - GitHub: [https://github.com/chu-aie/deepnlp-2023][repo-url]
-- PyPI: [https://pypi.org/project/deepnlp-2023][pypi-url]
+- Course Syllabus: [https://course.entelecheia.ai/kr/2023-2/nlp_deep/](https://course.entelecheia.ai/kr/2023-2/nlp_deep/)
+- Lecture Notes: [https://lecture.entelecheia.ai/lectures/nlp_deep/](https://lecture.entelecheia.ai/lectures/nlp_deep/)
+- RepoTracker ![RepoTracker](https://assets.entelecheia.ai/icons/repotracker.svg): [https://github-stats.com/chu-aie/deepnlp-2023](https://github-stats.com/chu-aie/deepnlp-2023)
 
 자연어 처리(NLP)를 위한 딥러닝 과정은 대학생들이 딥러닝을 사용하여 자연어 처리 문제에 대한 첨단 기술을 이해하고 적용할 수 있는 필수 기술과 지식을 갖추도록 하기 위한 전문 과정이다.
 
