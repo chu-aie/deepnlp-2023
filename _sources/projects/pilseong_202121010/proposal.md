@@ -49,27 +49,19 @@ _Prepared by: [Group Name]_
 
 ## 5. Software Process Model
 
-- State the chosen software process model (e.g., Agile, Waterfall, Scrum).
-- Justify your model choice and illustrate its application to your project.
-- Detail the activities and roles in each phase, possibly via a Gantt chart.
-- Discuss testing methodologies, quality assurance, and project management strategies.
+- 이번 프로젝트의 소프트웨어 프로세스 모델은 Agile 모델을 이용할 것이다. Agile 모델은 반복적이고 점근적인 방법으로 진행되는 프로세스 모델이다. 아직 불분명한 목표로 인해 변경 사항을 계속 수용하고 최종목표를 확실히 해야되기 때문에 Agile 모델을 선택했다.
 
 ## 6. Budget
 
-- Provide a financial plan covering hardware, software, labor, and other costs.
-- Include a contingency plan for unexpected expenses.
+- 공감형 대화 생성 프로그램은 거대 언어 모형을 돌려야하기 때문에 고사양 하드웨어를 사용을 해야된다. 때문에 a100서버를 사용할 예정이다.
 
 ## 7. System Architecture
 
-- Detail the system architecture, mentioning tools, technologies, and data flows.
-- Explain data storage, management strategies, and both hardware and software requirements.
-- Discuss data visualization and analytical tools you plan to use.
-- Incorporate flowcharts or diagrams to visually represent the system architecture.
+- 데이터는 공공데이터포털을 통해 공공데이터로 모델을 훈련을 시킬 예정이다. 또한 os는 linux를 사용할 예정이고 위에 언급한듯이 a100을 사용할 예정이다.
 
 ## 8. Risks Assessment
 
-- Identify potential risks such as technical issues or resource limitations.
-- Provide mitigation strategies for each risk.
+- 공감형 대화는 온/오프라인 두 상황에서 일어나는 대화이다. 이번 프로젝트는 온라인을 주 목표로 진행을 하는데 온라인 대화는 또 다른 대화체를 사용한다. 프로젝트를 진행하면서 위험 요소는 공감형 대화를 온라인 대화체로 생성을 해야하는 부분에 있다. 따라서 여러가지 선택지를 줄 예정이다.
 
 ## 9. Resources
 
@@ -77,10 +69,7 @@ _Prepared by: [Group Name]_
 
 ## 10. Technical Specifications
 
-- Dive deep into technical aspects like data sources, data transformations, and algorithms.
-- Discuss the technology stack, including programming languages, frameworks, and libraries.
-- Outline data security measures.
-
+- 거대 언어 모형중 어떤 것을 사용할지, 프레임 워크와 라이브러리는 어떤 것을 사용할지 아직 정해지지 않았다. 프로그래밍 언어는 python을 사용할 예정이다.
 ## 11. Timeline and Deliverables
 
 - Establish a project timeline with milestones and deadlines.
@@ -88,5 +77,4 @@ _Prepared by: [Group Name]_
 
 ## 12. Conclusion
 
-- Summarize key points, reiterate the project’s importance, and present a call to action.
-- Address potential challenges and limitations.
+- 공감형 대화 생성 프로젝트는 현대 사회에 공감성 대화가 어려운 사람들의 고민을 덜어주는 프로그램이다. 대화에 맥락을 이해하고 대화체에 맞는 공감형 대화를 여러가지 주어지고 사용자가 선택을 하는 식에 프로그램을 목표로 하고있다.
