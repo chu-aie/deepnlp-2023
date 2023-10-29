@@ -1,4 +1,4 @@
-# DLUH (Drone Location Upload with Hand)
+# HLU ( Hand Location Upload )
 
 _Prepared by: [Group Name]_
 
@@ -12,7 +12,7 @@ _Prepared by: [Group Name]_
   - [1. 요약](#1-executive-summary)
   - [2. 배경](#2-background)
   - [3. 목표](#3-objectives)
-  - [4. 목표범위](#4-scope)
+  - [4. 범위](#4-scope)
   - [5. 소프트웨어 프로세스 모델](#5-software-process-model)
   - [6. 예산](#6-budget)
   - [7. 시스템 구조](#7-system-architecture)
@@ -26,23 +26,29 @@ _Prepared by: [Group Name]_
 ## 1. 요약
 
 - Summarize the project's primary goals, intended outcomes, and problem it aims to solve. Keep it concise, ideally under 200 words.
--  LLM 혹은 프롬포트 시스템을 바탕으로한 AI웹들이 출현하게되면서, 이미지를 토대로 좌표를 추적할수 있을것임을 파악하게됨. 따라서  이미지 파악에 관련한 선두작업으로 S펜으로 작성된것을 자동 텍스트화하여 작성된 장소에 따라 이동할수 있도록하는 프로그램을 만드려고함.   
+-  인공지능의 자연어처리를 드론에 적용하여 명령된 장소에 따라 이동할수 있도록하는 프로그램을 만드려고함.    
 
 ## 2. 배경
-- 2023년 1월쯤부터 초경량비행장치중에서 멀티콥터 종목의 자격증을 따기위해서, 그리고 멀티콥터에 대한 지식을 습득하기위해 전문교육기관으로가서 비행시간 24시간 이상을 채우던 중이였음.  그러던중 2022년에 만들어진 chatGPT에 대한 정보를 듣고
-  LLM언어모델과 프롬포트를 이용하여 새 문장을 만들수 있는 당시 시점에서 향후 몇십년뒤에 그 이전에 있던 인공지능 왓슨보다 자연어 습득능력이 향상될것이라는것뿐만 아니라 좌표또한 추적할수 있다는것을 간파하게됨
-  그럼에 따라  s펜으로 적혀진 문장만으로 언제 어디로 무엇을 배달할수 있을지  요약한 다음 수치화하여 지도상의 좌표값, 물건값으로 변환하여 입력할수 있다는것을 알아보고자 프로젝트를 계획하게됨.
+- 2023년 1월쯤부터 초경량비행장치중에서 멀티콥터 종목의 자격증을 따기위해서, 그리고 멀티콥터에 대한 지식을 습득하기위해 전문교육기관으로가서 비행시간 24시간 이상을 채우던 중이였음.  그러던중 2022년에 만들어진 chatGPT에 대한 정보를 듣고 인공지능에 대해서 조사해본 결과
+  ChatGPT가 LLM에 근거하여 만들어졌고 그 LLM이 NLP라는 자연어처리를 위한 목적을 위한 데이터베이스라는걸 알게됨.  향후 수십년뒤 NLP가 영향을 미칠수 있는 다양한 변수중 드론과 관련된 가능성을 고민하던 결과,  NLP를 통해 드론의 이동 및 수행명령을 내릴수 있다는 사실을 알게됨.
+  그 명령이란 조난자나 사건 현장이 발생했을경우에  구두 명령을 수행한것을 인식하여 해당 좌표로 이동하여 도와줄수 있는 것임.
 
 ## 3. 목표
 
 - Detail your project’s SMART objectives.
 - Describe how the software will meet these objectives and solve the outlined problem.
-- s펜으로 입력한 이미지만으로 프로그램이 문장을 완성할수 있는지 확인하고, 완성한 값으로서 이동수단인 드론의 좌표 해석능력을 높이려함.  참고 코드로는 https://github.com/thiagoalessio/tesseract-ocr-for-php (tesseract ocr for php)로 여기에 코드 종료와 끝을 달려함.   혼자서해야하는 만큼 목표가 크기때문에 큰목표와 작은 목표들을 설정하여  3단계에 걸친 목표 (텍스트변환 시스템 완성 -> 좌표 비행 완성-> 화물 운송)이 주어졌으며, 각 작은목표중 지연되는 경우에는 최소한 텍스트변환 시스템, 좌표변환 시스템등의 작은 목표를 최소 큰 목표로 잡는다.  
+- 구체적 -  구두명령을 내렸을때 드론이 필요한 위치로 이동할수 있는가를 알아본다.
+- 측정가능 - 장기적인 프로젝트이기때문에 프로그래밍, 명령의 가짓수?, 실전 비행 테스트 등으로 세부 목표를 나뉘며 혹여나 일정으로 인해  드론 비행 테스트가 안될경우  답변의 출력을 확인함 (예 -> 구두명령으로 왼쪽 5m 이동명령을 내렸다면 xy축으로 생각했을시 출력 결과에 x5로 나옴) 
+- 행동중심 - 해당 과제물에서 중요한것은 임베딩임. 드론은 결국 기계이므로 기계가 동작하기위한 프로그래밍이 절대조건으로 필요하게됨 따라서 임베딩을 위한 준비가 필요함. 
+- 현실적 -  임베딩을 위한 파이썬의 기본적인 문법 입력은 가능하지만 문제는 수행명령이 내려질수 있는 경우의 수가 많으므로 시간이 걸리기때문에 확실한 이동명령(예:왼쪽으로 고도를 유지한채 5m이동.)정도를 인식할수 있도록함.   
+- 제한적인 - 기말까지 7주 정도 시간이 남아있음. 그시간안에 기말고사 과목들에 대한 준비가 이루어지기때문에 기말 준비시간 1주를 빼면 6주가 남음.   따라서 11월 28일까지 초기버전 완성해야함.
   
 ## 4. 범위
 
 - Define the scope of the project, outlining its features and functionalities.
 - Mention any limitations or constraints such as resources, time, or technologies.
+- 3단계에 걸친 목표 (텍스트변환 시스템 완성 -> 좌표 비행 완성-> 화물 운송)이 주어졌으며, 각 작은목표중 지연되는 경우에는 최소한 텍스트변환 시스템, 좌표변환 시스템등의 작은 목표를 최소 큰 목표로 잡음.
+- 임베딩에 대해 아는 사람과 방과후 활동을 하면서 임베딩에 대한 기초지식을 습득하여 준비함.
 - 
 ## 5. 소프트웨어 프로세스 모델
 
@@ -55,7 +61,7 @@ _Prepared by: [Group Name]_
 
 - Provide a financial plan covering hardware, software, labor, and other costs.
 - Include a contingency plan for unexpected expenses.
-- 물건을 들기 이전에 프로그래밍값을 확인할수 있는 소형 드론 1대(십만원대), 실제 비행으로 물건이송이 가능한지 확인하는 대형드론 1대(백만원대)가 필요함. 또한 지표면 감지 시스템이 있어야함.  총 130만원이 필요함.  서버의 경우 학교서버를 빌려 제작하고자함. 
+-  학교서버를 빌려 프로그램을 제작하고자함.  
 
 ## 7. 시스템 구조
 
@@ -63,18 +69,18 @@ _Prepared by: [Group Name]_
 - Explain data storage, management strategies, and both hardware and software requirements.
 - Discuss data visualization and analytical tools you plan to use.
 - Incorporate flowcharts or diagrams to visually represent the system architecture.
-- s펜으로 입력된 글자를 이미지로 해석하여 이미지를 텍스트로 변환하여 텍스트로 좌표 요약본을 만들고 드론의 이동위치로 반영함. 필체 데이터를 통하여 패턴을 기계학습시켜서  좌표 요약을 한다. 이륙후부터  비행 순항시 지표면으로부터 150미터 미만, 140미터 이상을 유지하도록 함. 
+- https://github.com/thiagoalessio/tesseract-ocr-for-php (tesseract ocr for php)의 코드를 인용하여 임베딩을 함. 
 ## 8. 위험요소
 
 - Identify potential risks such as technical issues or resource limitations.
 - Provide mitigation strategies for each risk.
-- 비행 전:프로그램 인식이 안됨, 업데이트가 이루어지지않음, 용량 한계, 프로펠러 파손, 드론 동력원인 리튬 전지에 문제 발생,  사전비행허가를 받지않음, 안전구역 확보가 되지않음, 날씨가 비행하기 부적절함  
-- 비행 중: 날개 회전수에 불균형이 이뤄어짐, 주변에 사람이 있음, 정해진 코스를 이탈함, 너무 낮게남, 너무 높이남
-- 비행 후: 리튬전지 과열이 있었는가, 착륙 이후 고장이 있었는가, 입력된 값에 따른 착륙이 이루어졌는가
+- 데이터 부족
+- 비행중 오작동 가능성
+- 좌표 특정불가
 ## 9. 자원
 
 - Enumerate required resources, including staff roles, equipment, and software.
-
+서버, 파이썬 
 ## 10. 기술 사양 
 
 - Dive deep into technical aspects like data sources, data transformations, and algorithms.
@@ -85,9 +91,10 @@ _Prepared by: [Group Name]_
 
 - Establish a project timeline with milestones and deadlines.
 - Specify what will be delivered at each milestone and the quality assurance measures in place.
-- 드론을 띄울수 있는 시간에서 저녁시간이 금지되어있기에 오후 6시 30분 이후부터 오전 8시 29분까지 드론 비행이 안되고, 12시부터 1시까지를 점심시간으로 마찬가지로 빼면,  오전 8시 30분부터 11시 50분, 1시부터 6시 20분   전반부와 후반부로 나뉘어 비행할수 있다.따라서 비행금지시간에는 프로그램 및 필체 데이터를 수집하고있다가, 실제 비행시간시에 그동안 만들었던 데이터를 입력하여 드론을 비행시켜서 비행안정성과 좌표 정확도를 확인한다.      
+- 임베딩 준비 시간 1주
+- 명령어 수집 프로그래밍 4주
 ## 12. 결론
 
 - Summarize key points, reiterate the project’s importance, and present a call to action.
 - Address potential challenges and limitations.
-
+- 

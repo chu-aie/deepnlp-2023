@@ -1,4 +1,4 @@
-# Name
+# Template
 
 Your name
 
