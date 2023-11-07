@@ -1,5 +1,26 @@
 <!--next-version-placeholder-->
 
+## v0.7.0 (2023-11-07)
+
+### Feature
+
+* **autotrain:** Add test script for AutoModelForCausalLM ([`bde4cbe`](https://github.com/chu-aie/deepnlp-2023/commit/bde4cbe5a161e06690ed0ade7366e4deb5d080eb))
+* **examples/autotrain:** Add README.md for fine-tuning Large Language Models with Hugging Face's AutoTrain ([`374db46`](https://github.com/chu-aie/deepnlp-2023/commit/374db460e4a186df6d41a32b349d95f8d41a38ae))
+* **autotrain:** Add DATA_FILE parameter ([`4cf03a1`](https://github.com/chu-aie/deepnlp-2023/commit/4cf03a14b6f74a2bac3cdf1d66bf586a2bb1eda6))
+* **autotrain:** Add data_file environment variable ([`583380b`](https://github.com/chu-aie/deepnlp-2023/commit/583380b273401e24f935b79dc911e3872c6ddd73))
+* **autotrain:** Add dataload.py for loading the dataset ([`5a16671`](https://github.com/chu-aie/deepnlp-2023/commit/5a166713feac4c6ebeb5ce2e253bd89018a220ad))
+* **autotrain:** Add new falcon environment configuration file ([`febce8e`](https://github.com/chu-aie/deepnlp-2023/commit/febce8e3845da0006527dac424e761164963f56a))
+* **autotrain:** Add new script for automated training ([`87c417e`](https://github.com/chu-aie/deepnlp-2023/commit/87c417ec125f804fd4b1a4e8601caf709dd546db))
+* **Dockerfile.app:** Install Git LFS for large file version control ([`bdc25c3`](https://github.com/chu-aie/deepnlp-2023/commit/bdc25c31515b8f5710f016754f3bfa0904d887e1))
+* **Dockerfile.base:** Add ffmpeg and related libraries to Dockerfile ([`bfd73a6`](https://github.com/chu-aie/deepnlp-2023/commit/bfd73a6e9bf856495c082da55da37949bf397238))
+* **docker:** Add git-lfs to Dockerfile.base ([`779a219`](https://github.com/chu-aie/deepnlp-2023/commit/779a2191ad3b7b54a2c835ec04dceefa53de0187))
+* **autotrain:** Add requirements.txt ([`9ebb1d2`](https://github.com/chu-aie/deepnlp-2023/commit/9ebb1d2dd1efeb74162c06217c4bf000e217193c))
+
+### Fix
+
+* **autotrain:** Change data-path to root ([`ab20acb`](https://github.com/chu-aie/deepnlp-2023/commit/ab20acb27f327e7f0ade10c08d6518f385fac85d))
+* **autotrain:** Replace DATA_PATH with DATA_FILE ([`04556a6`](https://github.com/chu-aie/deepnlp-2023/commit/04556a653344524e0c5115efb89362c85623a31e))
+
 ## v0.6.0 (2023-10-31)
 
 ### Feature

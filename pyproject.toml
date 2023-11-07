@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "deepnlp-2023"
-version = "0.6.0"
+version = "0.7.0"
 description = "Deep Learning for NLP is a specialized course aimed at equipping undergraduate students with the essential skills and knowledge needed to work on cutting-edge Natural Language Processing (NLP) problems using deep learning."
 authors = ["Young Joon Lee <entelecheia@hotmail.com>"]
 license = "CC-BY-4.0"
