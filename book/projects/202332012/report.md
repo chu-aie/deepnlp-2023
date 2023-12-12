@@ -55,6 +55,9 @@ Gensim라이브러리를 설치하고 해당 라이브러리의 summarization모
 
 ## 참고문헌
 -PageRank논문(1998) - The PageRank Citation Ranking: Bringing Order to the Web   (PageRank개념)
+
 -[파이썬]TextRank(텍스트랭크란..간단히 구현해보기) - Seolini (2021.07.06) https://velog.io/@seolini43/%ED%8C%8C%EC%9D%B4%EC%8D%AC-TextRank%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%9E%AD%ED%81%AC%EB%9E%80..-%EA%B0%84%EB%8B%A8%ED%95%98%EA%B2%8C-%EA%B5%AC%ED%98%84%ED%95%B4%EB%B3%B4%EA%B8%B0
+
 -[파이썬]텍스트 요약 알고리즘 - sjb2010 (2023.04.07) https://velog.io/@sjb2010/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%9A%94%EC%95%BD-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98   (알고리즘 코드 관련)
+
 -Tokenization이란? 토큰화? 토크나이제이션? (2022.04.16) https://bigdatamaster.tistory.com/175 (단어토큰화 관련 개념습득)
