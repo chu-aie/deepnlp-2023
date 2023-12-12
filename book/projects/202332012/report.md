@@ -8,11 +8,13 @@
 ![image](https://github.com/GreatBritanBias/deepnlp-2023/assets/88702293/66134289-4850-4d91-9485-b9028c1508db)
 
 Gensim라이브러리를 설치하고 해당 라이브러리의 summarization모듈에서 summarize함수를 불러오는 함수이다. 
-자연어처리와 토픽 모델링을 위한 라이브러리중 하나이며,  불러온 함수는 텍스트 요약에 사용된다.  
+자연어처리와 토픽 모델링을 위한 라이브러리중 하나이며,  불러온 함수는 원래문장보자 짧게 요약하는 텍스트 요약에 사용된다.  
+
 
 ![image](https://github.com/GreatBritanBias/deepnlp-2023/assets/88702293/f76c000f-9d72-4692-9701-7e79f515b339)
 
-또다른 자연어처리 라이브러리인 Sumy를 설치하여, 그중 LexRank알고리즘으로 문장을 하나의 노드를 정리한뒤, 단어하나하나를 토큰화하여 텍스트 데이터를 요약하는 기능을 수행한다.(2차수단)
+또다른 자연어처리 라이브러리인 Sumy를 설치하여, 그중 LexRank로 문장을 하나의 노드를 정리한뒤, 단어하나하나를 토큰화하여 텍스트 데이터를 요약하는 기능을 수행한다.(2차수단)
+그리고 그림등의 불필요한 오브젝트를 제외하고 읽을수있는 문자열을 정리하여 문법적 관계를 해석해주는 plaintextpaser을 추가하여 요약효율을 높인다.
 
 ![image](https://github.com/GreatBritanBias/deepnlp-2023/assets/88702293/eed92349-efc7-419b-995a-a8c7713b319f)
 
