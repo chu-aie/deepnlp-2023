@@ -54,7 +54,7 @@ Gensim라이브러리를 설치하고 해당 라이브러리의 summarization모
 소스코드 작성중 위의 끝까지 해결되지못한 점으로 인하여 결국 결과를 도출해내는데 실패하였다.  과정중에서는 초기에 제안서를 작성했을때 드론 관련으로 목표를 잡았으나, 해당 목표는 본인의 능력을 매우 넘어서는 목표였기에 문장요약기로 목표를 수정하고 초기의 발판을 닦을수 있도록 하였다. 그러나 진행하고보니 제안서에서 설정했던 위험요소보다도 더 많은 문제에 부딫히게되어서 난항을 겪었었다.  그럼에도 불구하고 처음으로 혼자 맡은 프로젝트중에서 가장 의미 있었다고 생각된다.  시행착오들을 거쳐서  특정 요약 라이브러리가 먹히지않는다면 다른 라이브러리를 사용하는 등의 2차적인 수단을 생각했을때가 있었기 때문에,  향후 프로젝트를 진행할때도 항상 2차적 수단을 생각해야한다는것을 알게되었다. 
 
 ## 참고문헌
--PageRank논문(1998) - The PageRank Citation Ranking: Bringing Order to the Web   (PageRank개념)
+-PageRank논문(1998) - The PageRank Citation Ranking: Bringing Order to the Web  https://www.cis.upenn.edu/~mkearns/teaching/NetworkedLife/pagerank.pdf (PageRank개념)
 
 -[파이썬]TextRank(텍스트랭크란..간단히 구현해보기) - Seolini (2021.07.06) https://velog.io/@seolini43/%ED%8C%8C%EC%9D%B4%EC%8D%AC-TextRank%ED%85%8D%EC%8A%A4%ED%8A%B8%EB%9E%AD%ED%81%AC%EB%9E%80..-%EA%B0%84%EB%8B%A8%ED%95%98%EA%B2%8C-%EA%B5%AC%ED%98%84%ED%95%B4%EB%B3%B4%EA%B8%B0
 
