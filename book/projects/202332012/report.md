@@ -60,4 +60,4 @@ Gensim라이브러리를 설치하고 해당 라이브러리의 summarization모
 
 -[파이썬]텍스트 요약 알고리즘 - sjb2010 (2023.04.07) https://velog.io/@sjb2010/%ED%8C%8C%EC%9D%B4%EC%8D%AC-%ED%85%8D%EC%8A%A4%ED%8A%B8-%EC%9A%94%EC%95%BD-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98   (알고리즘 코드 관련)
 
--Tokenization이란? 토큰화? 토크나이제이션? (2022.04.16) https://bigdatamaster.tistory.com/175 (단어토큰화 관련 개념습득)
+-Tokenization이란? 토큰화? 토크나이제이션? - The Yellow lion king 데이터와 함께 살아가기 (2022.04.16) https://bigdatamaster.tistory.com/175 (단어토큰화 관련 개념습득)
