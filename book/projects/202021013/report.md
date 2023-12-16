@@ -24,12 +24,12 @@
 
 [**LDCC/LDCC-Instruct-Llama-2-ko-13B-v1.4**](https://huggingface.co/LDCC/LDCC-Instruct-Llama-2-ko-13B-v1.4) 모델과 싸이월드 말투 데이터를 제작하여 사용함. 
 
-### step1 : LDCC모델 테스트 - src/202021013/code/test.py
- <img src="img/ldcc_test.py.png">
+### step1 : LDCC모델 테스트
+- src/202021013/code/test.py
+<img src="img/ldcc_test.py.png">
+<img src="img/ldcc_test결과.png">
  
- <img src="img/ldcc_test결과.png">
- 
- - "좋아하는 사람한테 편지쓸거야. 받는사람이름은 정국이고 싸이월드 감성으로 적으면 돼."라는 질문을 던졌을때 나오는 결과를 보면 편지형태는 알지만 싸이월드 말투 이해 부족
+- "좋아하는 사람한테 편지쓸거야. 받는사람이름은 정국이고 싸이월드 감성으로 적으면 돼."라는 질문을 던졌을때 나오는 결과를 보면 편지형태는 알지만 싸이월드 말투 이해 부족
 
 ### step2 : 싸이월드 말투 데이터 제작 - src/202021013/code/datamake.ipynb
 
@@ -98,13 +98,15 @@
     
     "lora_r": 16,
     "lora_alpha": 32
-<img src="img/epoch2.png">
+    
+    <img src="img/epoch2.png">
 
 - NUM_EPOCHS=2 결과
 
     "lora_r": 8,
     "lora_alpha": 16
-<img src="img/epoch2_lorar8.png">
+    
+    <img src="img/epoch2_lorar8.png">
 
 ### step5 : test.py 다양한 시도 - src/202021013/code/test_practice.ipynb
 - 이 결과가 가장 잘 나와서 test.py로 실행
@@ -120,8 +122,6 @@
 <img src="img/test_pra4.png">
 
 
-## 결과
+## 결론
+- 발표자료 딥러닝 기말.pptx 
 <img src="img/결과.png">
-
-## 발표자료
-book/projects/202021013/딥러닝 기말.pptx
