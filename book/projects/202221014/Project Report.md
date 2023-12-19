@@ -7,11 +7,6 @@
 - **프로젝트 목적:** 창작 분야에서 AI의 활용을 통해 창작 과정 혁신 및 작업 효율성 증대
 - **프로젝트 참여자:** 이규범 202221014
 
-## 배경
-
-- **프로젝트 배경:** 창작 분야에서는 다양한 콘텐츠를 생산해야 하며, 이 과정은 복잡하고 시간 소모적이다. AI와 딥러닝 기술의 발전으로 창작 과정에 혁신이 필요하다.
-- **문제 정의:** 다양성 부족, 시간 및 노력 문제, 현실감 부족 등의 문제가 있다.
-
 ## 데이터 수집
 
 - **데이터 수집 소스:** 게임 스토리, 소설, 라이트 노벨, 영화 대본 등의 다양한 창작 콘텐츠
@@ -20,8 +15,16 @@
 ## 모델 설계
 
 - **사용한 LLM 모델:** LDCC/LDCC-Instruct-Llama-2-ko-13B-v1.4
-- **모델 튜닝:** 
+- **모델 튜닝:** LDCC/LDCC-Instruct-Llama-2-ko-13B-v1.4 모델을 NEFTune noise embeddings 및 Direct Preference Optimization (DPO)을 활용하여 fine-tuning하였다.
 - **하이퍼파라미터:** 
+  - Learning Rate: 2E-4
+  - Batch Size: 1
+  - Epochs: 4
+  - Block Size: 1024
+  - Warmup Ratio: 0.1
+  - Weight Decay: 0.01
+  - Gradient Accumulation: 4
+  - 사용된 기타 하이퍼파라미터 및 설정을 여기에 추가하세요.
 - **모델 아키텍처:** beomi/llama-2-koen-13b
 
 ## 실험 및 결과
