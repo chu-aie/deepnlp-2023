@@ -59,7 +59,16 @@
   3. 성능 평가: 글을 잘 작성했다는 평가를 수치적으로 표현하기엔 어려움이 있어서, 직접 완성된 글을 읽고 자연스러운 글이 작성됐는지, 주제에 대한 글을 작성했는지 판단하였다.
   
   4. 실험 내용
-     
+     처음 코드를 작동하였을때 LDCC의 모델이 너무 많은 RAM을 사용하여 GPU의 RAM이 부족하여 코드가 동작하지 않았다. 따라서 코드를 수정하여 모델을 4비트 정밀도로 로드하여 메모리 사용량을 대폭 줄였다.
+
+---
+#### 기존 코드
+model = AutoModelForCausalLM.from_pretrained(model_path)
+
+#### 변경 코드
+model = AutoModelForCausalLM.from_pretrained(model_path, load_in_4bit=True, device_map="auto")
+
+---
      
 
 - **결과:** 실험 결과, LDCC/LDCC-Instruct-Llama-2-ko-13B-v1.4 모델은 시나리오 생성 및 심리학적 요소 반영에서 높은 성능을 보였습니다. 이 모델을 통해 창작자들은 보다 다양하고 현실적인 스토리를 빠르게 개발할 수 있게 되었습니다.
