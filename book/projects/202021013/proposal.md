@@ -1,4 +1,4 @@
-# 소셜 미디어 언어 다변환 시스템: 싸이월드 vs. 인스타그램
+# 프로젝트 제안서
 
 **Project Title**
 - 소셜 미디어 언어 다변환 시스템: 싸이월드 vs. 인스타그램
@@ -9,7 +9,7 @@ _Prepared by: 김지연_
 
 ## Table of Contents
 
-- [Project Title](#project-title)
+- [프로젝트 제안서](#프로젝트-제안서)
   - [Table of Contents](#table-of-contents)
   - [1. Executive Summary](#1-executive-summary)
   - [2. Background](#2-background)

@@ -1,17 +1,21 @@
-# Project Title
-사건 시뮬레이션 시스템
+# 프로젝트 제안서
+
+**사건 시뮬레이션 시스템**
 
 _Prepared by: 이규범 202221014
 
 ## Table of Contents
 
-- [Project Title](#project-title)
+- [프로젝트 제안서](#프로젝트-제안서)
   - [Table of Contents](#table-of-contents)
   - [1. Executive Summary](#1-executive-summary)
   - [2. Background](#2-background)
   - [3. Objectives](#3-objectives)
+    - [3.1. 사용자의 입력 정보를 기반으로 한 효율적이고 정확한 사건 시뮬레이션 제공](#31-사용자의-입력-정보를-기반으로-한-효율적이고-정확한-사건-시뮬레이션-제공)
+    - [3.2. 심리학적 요소를 반영한 캐릭터 개발 도구 제공](#32-심리학적-요소를-반영한-캐릭터-개발-도구-제공)
   - [4. Scope](#4-scope)
   - [5. Software Process Model](#5-software-process-model)
+    - [선택 이유 및 정당화](#선택-이유-및-정당화)
   - [6. Budget](#6-budget)
   - [7. System Architecture](#7-system-architecture)
   - [8. Risks Assessment](#8-risks-assessment)
