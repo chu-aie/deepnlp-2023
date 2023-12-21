@@ -1,7 +1,7 @@
 # 기말 보고서
-주제: 공감형 대화 생성 모델
-기본 모델: LDCC/LDCC-Instruct-Llama-2-ko-13B-v1.4
-데이터: ypilseong/deepnlp_autotrain_Empathy_chat_data
+- 주제: 공감형 대화 생성 모델
+- 기본 모델: LDCC/LDCC-Instruct-Llama-2-ko-13B-v1.4
+- 데이터: ypilseong/deepnlp_autotrain_Empathy_chat_data
 
 ## Test1 - 기본 모델 inference
 ### 기본 test.py

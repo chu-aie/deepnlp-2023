@@ -1,4 +1,6 @@
-# 공감형 대화 생성
+# 프로젝트 제안서
+
+**공감형 대화 생성**
 
 _Prepared by: [Group Name]_
 
@@ -8,7 +10,7 @@ _Prepared by: [Group Name]_
 
 ## Table of Contents
 
-- [Project Title](#project-title)
+- [프로젝트 제안서](#프로젝트-제안서)
   - [Table of Contents](#table-of-contents)
   - [1. Executive Summary](#1-executive-summary)
   - [2. Background](#2-background)

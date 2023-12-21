@@ -1,4 +1,6 @@
-# Text summarizer
+# 프로젝트 제안서
+
+**Text summarizer**
 
 _Prepared by: [Group Name]_
 
@@ -7,20 +9,20 @@ _Prepared by: [Group Name]_
 
 ## Table of Contents
 
-- [Project Title](#project-title)
-  - [목차](#table-of-contents)
-  - [1. 요약](#1-executive-summary)
-  - [2. 배경](#2-background)
-  - [3. 목표](#3-objectives)
-  - [4. 범위](#4-scope)
-  - [5. 소프트웨어 프로세스 모델](#5-software-process-model)
-  - [6. 예산](#6-budget)
-  - [7. 시스템 구조](#7-system-architecture)
-  - [8. 위험요소](#8-risks-assessment)
-  - [9. 자원](#9-resources)
-  - [10. 기술사양](#10-technical-specifications)
-  - [11. 타임라인 및 결과물](#11-timeline-and-deliverables)
-  - [12. 결론](#12-conclusion)
+- [프로젝트 제안서](#프로젝트-제안서)
+  - [Table of Contents](#table-of-contents)
+  - [1. 요약](#1-요약)
+  - [2. 배경](#2-배경)
+  - [3. 목표](#3-목표)
+  - [4. 범위](#4-범위)
+  - [5. 소프트웨어 프로세스 모델](#5-소프트웨어-프로세스-모델)
+  - [6. 예산](#6-예산)
+  - [7. 시스템 구조](#7-시스템-구조)
+  - [8. 위험요소](#8-위험요소)
+  - [9. 자원](#9-자원)
+  - [10. 기술 사양](#10-기술-사양)
+  - [11. 타임라인 및 결과물](#11-타임라인-및-결과물)
+  - [12. 결론](#12-결론)
 
 
 ## 1. 요약

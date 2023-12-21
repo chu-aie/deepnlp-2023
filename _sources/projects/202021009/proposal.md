@@ -1,4 +1,4 @@
-# Project Title
+# 프로젝트 제안서
 
 **다중 AI NPC(Non-Player Character) 상호작용 게임 프로그램**
 
@@ -6,7 +6,7 @@ _Prepared by: 김도현_202021009
 
 ## Table of Contents
 
-- [Project Title](#project-title)
+- [프로젝트 제안서](#프로젝트-제안서)
   - [Table of Contents](#table-of-contents)
   - [1. Executive Summary](#1-executive-summary)
   - [2. Background](#2-background)
@@ -18,6 +18,9 @@ _Prepared by: 김도현_202021009
   - [8. Risks Assessment](#8-risks-assessment)
   - [9. Resources](#9-resources)
   - [10. Technical Specifications](#10-technical-specifications)
+    - [10.1. data sources and transformations](#101-data-sources-and-transformations)
+    - [10.2. technology stack](#102-technology-stack)
+    - [10.3. data security](#103-data-security)
   - [11. Timeline and Deliverables](#11-timeline-and-deliverables)
   - [12. Conclusion](#12-conclusion)
 
