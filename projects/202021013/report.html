@@ -186,16 +186,11 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2 has-children"><a class="reference internal" href="../202021009/index.html">김도현</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l3"><a class="reference internal" href="../202021009/proposal.html">Project Title</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../202021009/report.html">기말 프로젝트 보고서</a></li>
-
-
-
-
 </ul>
 </li>
 <li class="toctree-l2 current active has-children"><a class="reference internal" href="index.html">김지연</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="proposal.html">소셜 미디어 언어 다변환 시스템: 싸이월드 vs. 인스타그램</a></li>
 <li class="toctree-l3 current active"><a class="current reference internal" href="#">소셜 미디어 언어 다변환 시스템: 싸이월드</a></li>
-
 </ul>
 </li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../202221014/index.html">이규범</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -438,8 +433,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">소셜 미디어 언어 다변환 시스템: 싸이월드</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hugging-face-autotrain-llm-fine-tuning">Hugging Face AutoTrain을 사용한 LLM Fine-Tuning</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hugging-face-autotrain-llm-fine-tuning">Hugging Face AutoTrain을 사용한 LLM Fine-Tuning</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#src-202021013">src/202021013 코드 실행 과정</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step1-ldcc">step1 : LDCC모델 테스트</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step2-src-202021013-code-datamake-ipynb">step2 : 싸이월드 말투 데이터 제작 - src/202021013/code/datamake.ipynb</a></li>
@@ -450,9 +444,6 @@ document.write(`
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">결론</a></li>
 </ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -470,22 +461,22 @@ document.write(`
 <p><em>Prepared by: 김지연_202021013</em></p>
 </li>
 </ul>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="hugging-face-autotrain-llm-fine-tuning">
-<h1>Hugging Face AutoTrain을 사용한 LLM Fine-Tuning<a class="headerlink" href="#hugging-face-autotrain-llm-fine-tuning" title="Permalink to this heading">#</a></h1>
+<section id="hugging-face-autotrain-llm-fine-tuning">
+<h2>Hugging Face AutoTrain을 사용한 LLM Fine-Tuning<a class="headerlink" href="#hugging-face-autotrain-llm-fine-tuning" title="Permalink to this heading">#</a></h2>
 <ul>
 <li><p>src/202021013</p>
 <ul>
 <li><p>dataset = 훈련시키기 위해 csv로 가공된 데이터</p></li>
 <li><p>ori_data = 원본데이터를 dataset으로 만들기 위해 가공한 데이터</p></li>
 <li><p>code</p>
-<p>datamake.ipynb = dataset과 ori_data를 만들기 위해   실행한 코드</p>
+<p>datamake.ipynb = dataset과 ori_data를 만들기 위해 실행한 코드</p>
 <p>test_practice.ipynb = 만든 model을 테스트 하기위해 시도한 코드</p>
 <p><a class="reference external" href="http://test.py">test.py</a> = 가장 잘되는 테스트 코드</p>
 </li>
 </ul>
 </li>
 </ul>
+</section>
 <section id="src-202021013">
 <h2>src/202021013 코드 실행 과정<a class="headerlink" href="#src-202021013" title="Permalink to this heading">#</a></h2>
 <p><a class="reference external" href="https://huggingface.co/LDCC/LDCC-Instruct-Llama-2-ko-13B-v1.4"><strong>LDCC/LDCC-Instruct-Llama-2-ko-13B-v1.4</strong></a> 모델과 싸이월드 말투 데이터를 제작하여 사용함.</p>
@@ -493,8 +484,8 @@ document.write(`
 <h3>step1 : LDCC모델 테스트<a class="headerlink" href="#step1-ldcc" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>src/202021013/code/test.py
-<img src="img/ldcc_test.py.png">
-<img src="img/ldcc_test결과.png"></p></li>
+<img alt="" src="../../_images/ldcc_test.py.png" />
+<img alt="" src="projects/202021013/img/ldcc_test%EA%B2%B0%EA%B3%BC.png" /></p></li>
 <li><p>“좋아하는 사람한테 편지쓸거야. 받는사람이름은 정국이고 싸이월드 감성으로 적으면 돼.”라는 질문을 던졌을때 나오는 결과를 보면 편지형태는 알지만 싸이월드 말투 이해 부족</p></li>
 </ul>
 </section>
@@ -502,11 +493,11 @@ document.write(`
 <h3>step2 : 싸이월드 말투 데이터 제작 - src/202021013/code/datamake.ipynb<a class="headerlink" href="#step2-src-202021013-code-datamake-ipynb" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>txt 파일
-<img src="img/txt.png"></p></li>
+<img alt="" src="../../_images/txt.png" /></p></li>
 <li><p>txt 파일 json으로 수정
-<img src="img/txt_json.png"></p></li>
+<img alt="" src="../../_images/txt_json.png" /></p></li>
 <li><p>json파일 csv로 수정(2442개)
-<img src="img/json_csv.png"></p></li>
+<img alt="" src="../../_images/json_csv.png" /></p></li>
 </ul>
 </section>
 <section id="step3-ldcc-fine-tuning">
@@ -544,18 +535,18 @@ REPO_ID=&quot;username/repo_name&quot;
 </li>
 <li><p>NUM_EPOCHS=5 결과 &gt;</p>
 <p>src/202021013/code/test.py실행
-<img src="img/test_mymodel.png">
-<img src="img/epoch5.png">
+<img alt="" src="../../_images/test_mymodel.png" />
+<img alt="" src="../../_images/epoch5.png" />
 데이터에 프롬프트 템플릿 형식이 나옴.</p>
 </li>
 <li><p>NUM_EPOCHS=2 결과
-<img src="img/epoch2.png">
+<img alt="" src="../../_images/epoch2.png" />
 가장 잘 나온 결과</p></li>
 <li><p>NUM_EPOCHS=3 결과
-<img src="img/epoch3.png">
+<img alt="" src="../../_images/epoch3.png" />
 데이터에 프롬프트 템플릿 형식이 나옴.</p></li>
 <li><p>NUM_EPOCHS=1 결과
-<img src="img/epoch1.png">
+<img alt="" src="../../_images/epoch1.png" />
 결과가 LDCC모델과 유사함. 싸이월드 말투가 안나옴.</p></li>
 </ol>
 </li>
@@ -567,12 +558,12 @@ REPO_ID=&quot;username/repo_name&quot;
 <li><p>NUM_EPOCHS=2 결과</p>
 <p>“lora_r”: 16,
 “lora_alpha”: 32</p>
-  <img src="img/epoch2.png">
+<p><img alt="" src="../../_images/epoch2.png" /></p>
 </li>
 <li><p>NUM_EPOCHS=2 결과</p>
 <p>“lora_r”: 8,
 “lora_alpha”: 16</p>
-  <img src="img/epoch2_lorar8.png">
+<p><img alt="" src="../../_images/epoch2_lorar8.png" /></p>
 </li>
 </ul>
 </section>
@@ -580,16 +571,16 @@ REPO_ID=&quot;username/repo_name&quot;
 <h3>step5 : <a class="reference external" href="http://test.py">test.py</a> 다양한 시도 - src/202021013/code/test_practice.ipynb<a class="headerlink" href="#step5-test-py-src-202021013-code-test-practice-ipynb" title="Permalink to this heading">#</a></h3>
 <ul>
 <li><p>이 결과가 가장 잘 나와서 test.py로 실행
-<img src="img/test_pra1.png"></p></li>
+<img alt="" src="../../_images/test_pra1.png" /></p></li>
 <li><p>2번째 결과
-<img src="img/test_pra2.png"></p></li>
+<img alt="" src="../../_images/test_pra2.png" /></p></li>
 <li><p>3번째 결과</p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>  2006.05.24.싸이월드 싸이버스타 정 국 ♡ 10년후에도 30년이후 40이후에 50 60세가 되어도 70.80세 되서도 그대만 생각할거야 나만을 사랑해줘 싸이버사랑 싸이월드가 영원토록 같이해. 싸이코가 될때까지 싸이사랑해 싸이라이프를 살아갈거야 싸이싸이트가 없어질때까지 싸이를 평생동안 사랑할것이다 싸이마음을 영원히 간직할 것이다 싸이미니홈피에 싸이가 되어 영원히 있을 것이다 영원히 싸이인생을 살아볼 것이다 싸이나랑 평생사랑해줄래? 싸이감성을 영원히 가지고 살아줄래싸이여생을 싸이생명을 싸이영혼을 싸이라이프를 싸이생활을싸이를 영원히 함께싸이와
 </pre></div>
 </div>
 </li>
 <li><p>4번째 결과
-<img src="img/test_pra4.png"></p></li>
+<img alt="" src="../../_images/test_pra4.png" /></p></li>
 </ul>
 </section>
 </section>
@@ -597,7 +588,7 @@ REPO_ID=&quot;username/repo_name&quot;
 <h2>결론<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>발표자료 딥러닝 기말.pptx
-<img src="img/결과.png"></p></li>
+<img alt="" src="projects/202021013/img/%EA%B2%B0%EA%B3%BC.png" /></p></li>
 </ul>
 </section>
 </section>
@@ -665,8 +656,7 @@ REPO_ID=&quot;username/repo_name&quot;
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">소셜 미디어 언어 다변환 시스템: 싸이월드</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hugging-face-autotrain-llm-fine-tuning">Hugging Face AutoTrain을 사용한 LLM Fine-Tuning</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hugging-face-autotrain-llm-fine-tuning">Hugging Face AutoTrain을 사용한 LLM Fine-Tuning</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#src-202021013">src/202021013 코드 실행 과정</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step1-ldcc">step1 : LDCC모델 테스트</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step2-src-202021013-code-datamake-ipynb">step2 : 싸이월드 말투 데이터 제작 - src/202021013/code/datamake.ipynb</a></li>
@@ -677,9 +667,6 @@ REPO_ID=&quot;username/repo_name&quot;
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">결론</a></li>
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
